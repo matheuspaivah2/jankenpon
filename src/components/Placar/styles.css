@@ -1,0 +1,13 @@
+.placar{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    column-gap: 20px;
+  }
+  
+  .placarPlayer, .placarMaquina{
+    display: flex;
+    flex-direction: column;
+  }
