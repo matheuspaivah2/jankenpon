@@ -1,8 +1,8 @@
 import './styles.css'
 
-const Button = ({chield}) =>{
+const Button = ({children}) =>{
     return(
-        <button>{chield}</button>
+        <button>{children}</button>
     )
 }
 

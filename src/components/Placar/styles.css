@@ -1,13 +1,29 @@
 .placar{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 200px;
     border: 2px solid white;
-    border-radius: 8px;
+    border-radius: 20px;
     display: flex;
-    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
   }
   
   .placarPlayer, .placarMaquina{
     display: flex;
     flex-direction: column;
+    
   }
+  .placarPlayer p, .placarMaquina p{
+      margin: 0;
+      margin-top: 10px;
+  }
+  .placarPlayer span, .placarMaquina span{
+      margin-top: 30px;
+      font-size: 50px;
+  }
+  .placar label{
+      margin-bottom: 120px;
+  }
+
+  

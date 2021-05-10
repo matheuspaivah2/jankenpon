@@ -3,12 +3,12 @@ const Jankenpon = () =>{
     return(
         <div className='jankenpon'>
           <div className='janMaquina'>
-            <p>Máquina</p>
-            <p></p>
+            <p className='player'>Máquina</p>
+            <span className='jan'>Pedra</span>
           </div>
           <div className='janPlayer'>
-            <p>Jogador</p>
-            <p></p>
+            <p className='player'>Jogador</p>
+            <span className='jan'>Papel</span>
           </div>
         </div>
     )

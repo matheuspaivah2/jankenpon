@@ -1,4 +1,38 @@
 .jankenpon{
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
   }
+
+  .janMaquina, .janPlayer{
+      display: flex;
+      position: relative;
+      width: 800px;
+      justify-content: center;
+      
+  }
+  .janMaquina{
+      border-bottom: 2px solid white;
+      align-items: flex-end;
+  }
+  .janMaquina .player{
+    margin-bottom: 5px;
+}
+  .janPlayer .player{
+    margin-top: 5px;
+}
+  .janPlayer{
+    align-items: flex-start;
+  }
+
+  .player{
+      position: absolute;
+      left: 0;
+      margin: 0;
+  }
+
+  .jan{
+      font-size: 50px;
+      margin: 30px 0;
+  }
+  
