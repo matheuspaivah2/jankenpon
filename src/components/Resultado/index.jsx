@@ -1,11 +1,15 @@
 import './styles.css'
-import Button from '../Button'
 
-const Resultado = () =>{
+
+const Resultado = ({handle, winner}) =>{
     return(
         <div className='container'>
-            <h2>Você Ganhou</h2>
-            <Button>Jogar Novamente</Button>
+            <h2>
+                {
+                    winner !== 'empate' ? `${winner} GANHOU` : 'EMPATE'
+                }
+            </h2>
+            <button onClick={handle}>Jogar Novamente</button>
         </div>
     )
 }

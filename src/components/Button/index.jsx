@@ -1,8 +1,8 @@
 import './styles.css'
 
-const Button = ({children}) =>{
+const Button = ({children, handle, jankenpon, disab}) =>{
     return(
-        <button>{children}</button>
+        <button disabled={disab} onClick={() => handle(jankenpon)}>{children}</button>
     )
 }
 

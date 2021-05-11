@@ -3,10 +3,10 @@
      width: 150px;
      border: none;
      border-radius: 8px;
-     background-color: #61DBFB;
+     /* background-color: #61DBFB; */
      color: #282c34;
      font-size: 22px;
      font-weight: bolder;
-
+    cursor: pointer;
 
  }
