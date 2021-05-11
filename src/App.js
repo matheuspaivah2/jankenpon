@@ -113,9 +113,8 @@ function App() {
       }
     }
 
-  
-
   }
+  
 
   const getRandomInt = (min, max) => {
     min = Math.ceil(min);

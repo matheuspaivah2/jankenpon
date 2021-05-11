@@ -9,7 +9,7 @@ const Resultado = ({handle, winner}) =>{
                     winner !== 'empate' ? `${winner} GANHOU` : 'EMPATE'
                 }
             </h2>
-            <button onClick={handle}>Jogar Novamente</button>
+            <button className='btPlayAgain' onClick={handle}>Jogar Novamente</button>
         </div>
     )
 }
