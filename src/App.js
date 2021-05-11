@@ -10,10 +10,6 @@ function App() {
 
   const [placarPlayer, setPlacarPlayer] = useState(0)
   const [placarMachine, setPlacarMachine] = useState(0)
-  const [rodada, setRodada] = useState(0)
-
-  
-
   const [player, setPlayer] = useState('')
   const [machine, setMachine] = useState('')
   const [winner, setWinner] = useState('')
@@ -23,40 +19,34 @@ function App() {
   const setJankenpon = (jankenpon) =>{
     
     const random = getRandomInt(0,3)
-    let mach = ''
-    setPlayer(`${jankenpon}`)
+    setPlayer(jankenpon)
     setDisab(true)
-    setRodada(rodada + 1)
+    
     
       switch (random){
         case 0:
           setMachine('pedra')
-          mach = 'pedra'
           break;
         case 1:
           setMachine('papel')
-          mach = 'papel'
           break;
         case 2:
           setMachine('tesoura')
-          mach = 'tesoura'
           break;     
         default:
       }
 
-    return [jankenpon, mach]
   }
 
-  useEffect((_,Prev) => {
+  useEffect(() => {
     if(player || machine){
       setTimeout(() => {
         setWinner(getWinner())
-        console.log(rodada)
       }, 700);
     }
 
     
-  }, [player]);
+  }, [player, machine]);
 
   const handleClick = (jankenpon) =>{
 
@@ -69,16 +59,12 @@ function App() {
 
     if(player !== ''){
       
-        setPlayer('')
-      
-      
+      setPlayer('')
     }
 
     if(machine !== ''){
       
-        setMachine('')
-     
-      
+      setMachine('')
     }
   }
 
