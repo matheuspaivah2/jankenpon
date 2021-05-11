@@ -1,7 +1,12 @@
 .jankenpon{
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    /* margin-top: 80px; */
+
   }
 
   .janMaquina, .janPlayer{
